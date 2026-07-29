@@ -1,0 +1,21 @@
+base_config: "awac"
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_awac_toptraj_ret25_bc_100k"
+total_steps: 100000
+offline_steps: 30000
+dataset_name: "pointmass_hard_toptraj_ret25"
+finetuned_dataset_name: "pointmass_hard_awac_toptraj_ret25_bc_100k"
+
+replay_capacity: 60000
+
+bc_pretrain_steps: 20000
+
+temperature: 1.0
+discount: 0.99
+
+online_epsilon_start: 0.0
+online_epsilon_end: 0.0
+online_epsilon_decay_steps: 1
+
+hidden_size: 64
+num_layers: 2

@@ -1,0 +1,33 @@
+CS285 HW4 Results Summary
+
+Problem 1:
+default: num_layers=1, hidden_size=32
+h64: num_layers=1, hidden_size=64
+l2: num_layers=2, hidden_size=32
+
+Problem 2:
+Obstacles 1-iter eval_return = -30.26
+
+Problem 3:
+Obstacles multi_iter final eval_return = -24.70
+Reacher multi_iter final eval_return = -269.65
+HalfCheetah multi_iter final eval_return = 426.32
+
+Problem 4:
+default = -260.99
+ensemble_size=1 = -277.50
+ensemble_size=5 = -263.76
+actionseq=100 = -321.99
+actionseq=2000 = -257.40
+horizon=5 = -231.44
+horizon=15 = -279.04
+
+Problem 5:
+Random Shooting = 426.32
+CEM iter=2 = 557.08
+CEM iter=4 = 1099.83
+
+Problem 6:
+SAC rollout_length=0 = 438.72
+Dyna rollout_length=1 = 816.41
+MBPO rollout_length=10 = 902.84

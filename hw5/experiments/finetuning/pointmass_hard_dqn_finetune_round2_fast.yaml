@@ -1,0 +1,17 @@
+base_config: "dqn"
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_dqn_finetune_round2_fast"
+use_double_q: true
+total_steps: 300000
+offline_steps: 50000
+dataset_name: "pointmass_hard_round2_finetuned_fast"
+finetuned_dataset_name: "pointmass_hard_dqn_round2_finetuned_fast"
+
+replay_capacity: 150000
+
+online_epsilon_start: 0.08
+online_epsilon_end: 0.0
+online_epsilon_decay_steps: 180000
+
+hidden_size: 64
+num_layers: 2

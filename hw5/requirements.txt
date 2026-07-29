@@ -1,0 +1,17 @@
+mujoco==2.2.0
+gym[classic_control,mujoco,atari]==0.25.2
+tensorboard==2.20.0
+tensorboardX==2.6.4
+matplotlib==3.5.3
+ipython==8.10.0
+moviepy==1.0.3
+pyvirtualdisplay==3.0
+torch==1.13.1
+opencv-python==4.8.1.78
+ipdb==0.13.9
+swig==4.0.2
+box2d-py==2.3.8
+tqdm==4.66.3
+pyyaml==6.0.1
+Pillow==12.3.0
+protobuf==6.33.5

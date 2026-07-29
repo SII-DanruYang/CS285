@@ -1,0 +1,28 @@
+base_config: "cql"
+
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_cql_separate_eval_20260713_142933"
+
+use_double_q: true
+
+total_steps: 300000
+offline_steps: 100000
+
+dataset_name: "pointmass_hard_rnd"
+finetuned_dataset_name: "pointmass_hard_rnd_separate_eval"
+
+batch_size: 256
+
+cql_alpha: 0.1
+online_cql_alpha: 0.0
+
+online_ratio: 0.75
+
+online_epsilon_start: 0.10
+online_epsilon_end: 0.01
+online_epsilon_decay_steps: 50000
+
+hidden_size: 64
+num_layers: 2
+
+use_reward: true

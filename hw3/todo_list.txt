@@ -1,0 +1,26 @@
+cs285/agents/dqn_agent.py:50:        # TODO(student): get the action from the critic using an epsilon-greedy strategy
+cs285/agents/dqn_agent.py:68:            # TODO(student): compute target values
+cs285/agents/dqn_agent.py:79:        # TODO(student): train the critic with the target values
+cs285/agents/dqn_agent.py:116:        # TODO(student): update the critic, and the target if needed
+cs285/agents/soft_actor_critic.py:150:        # TODO(student): Implement the different backup strategies.
+cs285/agents/soft_actor_critic.py:189:            # TODO(student)
+cs285/agents/soft_actor_critic.py:207:                # TODO(student): Add entropy bonus to the target values for SAC
+cs285/agents/soft_actor_critic.py:218:        # TODO(student): Update the critic
+cs285/agents/soft_actor_critic.py:241:        # TODO(student): Compute the entropy of the action distribution.
+cs285/agents/soft_actor_critic.py:248:        # TODO(student): Generate an action distribution
+cs285/agents/soft_actor_critic.py:252:            # TODO(student): draw num_actor_samples samples from the action distribution for each batch element
+cs285/agents/soft_actor_critic.py:260:            # TODO(student): Compute Q-values for the current state-action pair
+cs285/agents/soft_actor_critic.py:273:        # TODO(student)
+cs285/agents/soft_actor_critic.py:285:        # TODO(student): Sample actions
+cs285/agents/soft_actor_critic.py:289:        # TODO(student): Compute Q-values for the sampled state-action pair
+cs285/agents/soft_actor_critic.py:292:        # TODO(student): Compute the actor loss
+cs285/agents/soft_actor_critic.py:343:        # TODO(student): Update the critic for num_critic_upates steps, and add the output stats to critic_infos
+cs285/agents/soft_actor_critic.py:345:        # TODO(student): Update the actor
+cs285/agents/soft_actor_critic.py:348:        # TODO(student): Perform either hard or soft target updates.
+cs285/scripts/run_hw3_sac.py:70:            # TODO(student): Select an action
+cs285/scripts/run_hw3_sac.py:92:            # TODO(student): Sample a batch of config["batch_size"] transitions from the replay buffer
+cs285/scripts/run_hw3_dqn.py:93:        # TODO(student): Compute action
+cs285/scripts/run_hw3_dqn.py:96:        # TODO(student): Step the environment
+cs285/scripts/run_hw3_dqn.py:101:        # TODO(student): Add the data to the replay buffer
+cs285/scripts/run_hw3_dqn.py:121:            # TODO(student): Sample config["batch_size"] samples from the replay buffer
+cs285/scripts/run_hw3_dqn.py:127:            # TODO(student): Train the agent. `batch` is a dictionary of numpy arrays,

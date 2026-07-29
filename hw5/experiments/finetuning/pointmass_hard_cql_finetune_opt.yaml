@@ -1,0 +1,23 @@
+base_config: "cql"
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_cql_finetune_opt"
+use_double_q: true
+total_steps: 300000
+offline_steps: 50000
+dataset_name: "pointmass_hard_rnd"
+finetuned_dataset_name: "pointmass_hard_rnd_opt_buffer"
+
+# 放大回放池，留存更多离线样本防遗忘
+replay_capacity: 200000
+
+cql_alpha: 0.1
+# 新增在线轻微CQL正则，抑制策略漂移
+online_cql_alpha: 0.05
+
+# 降低初始探索、更快衰减噪声
+online_epsilon_start: 0.05
+online_epsilon_end: 0.0
+online_epsilon_decay_steps: 120000
+
+hidden_size: 64
+num_layers: 2

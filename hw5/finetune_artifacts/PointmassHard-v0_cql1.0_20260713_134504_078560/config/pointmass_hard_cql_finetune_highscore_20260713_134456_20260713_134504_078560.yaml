@@ -1,0 +1,33 @@
+base_config: "cql"
+
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_cql_finetune_highscore_20260713_134456"
+
+use_double_q: true
+
+total_steps: 200000
+offline_steps: 100000
+
+dataset_name: "pointmass_hard_rnd"
+finetuned_dataset_name: "pointmass_hard_rnd_highscore"
+
+batch_size: 256
+
+# Offline CQL 保持一定保守性。
+cql_alpha: 1.0
+
+# Online 阶段降低保守惩罚，让真实交互数据更快影响 Q 值。
+online_cql_alpha: 0.1
+
+# Online batch 中严格使用 50% 新数据、50% 原始 offline 数据。
+online_ratio: 0.5
+
+# 前期加强探索，之后逐渐转向利用。
+online_epsilon_start: 0.20
+online_epsilon_end: 0.02
+online_epsilon_decay_steps: 80000
+
+hidden_size: 64
+num_layers: 2
+
+use_reward: true

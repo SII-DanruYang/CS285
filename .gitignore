@@ -1,0 +1,77 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and local platform files
+.vscode/
+.idea/
+.sii/
+**/.sii/
+.DS_Store
+Thumbs.db
+PaperPilot/
+**/PaperPilot/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Logs and process files
+*.log
+*.pid
+*.out
+nohup.out
+gpu_keepalive.log
+
+# TensorBoard and experiment tracking
+events.out.tfevents.*
+**/events.out.tfevents.*
+wandb/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Generated videos
+*.mp4
+*.avi
+**/videos/
+
+# Runtime state files
+.last_*
+**/.last_*
+
+# Backup and temporary files
+*.bak
+*.bak_*
+*.before_*
+*.orig
+*.tmp
+*.swp
+*~
+*_backup.py
+
+# Redundant archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Large local installers
+Miniconda*.sh

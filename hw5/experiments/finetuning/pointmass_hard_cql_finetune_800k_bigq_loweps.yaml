@@ -1,0 +1,18 @@
+base_config: "cql"
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_cql_finetune_800k_bigq_loweps"
+use_double_q: true
+total_steps: 800000
+offline_steps: 50000
+dataset_name: "pointmass_hard_rnd"
+finetuned_dataset_name: "pointmass_hard_rnd_bigq_finetuned"
+
+cql_alpha: 0.1
+online_cql_alpha: 0.0
+
+online_epsilon_start: 0.10
+online_epsilon_end: 0.01
+online_epsilon_decay_steps: 500000
+
+hidden_size: 128
+num_layers: 3
